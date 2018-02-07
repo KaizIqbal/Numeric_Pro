@@ -1,0 +1,49 @@
+
+Algorithm For MODIFIED EULER'S METHOD
+
+          [FUNCTION fxy]
+          function fxy[x,y]{
+              return (dy/dx)
+          }
+
+[Step-1]  [Initialization]
+          int i <- 1
+          int count <- 1
+          float y1,y2,x1,x0,xn,h,x_array[n],y_array[n]
+
+[Step-2]  [Get value Of x0,xn,h,y1]
+          write(Enter x0 : )
+          read(x0)
+          write(Enter xn : )
+          read(xn)
+          write(Enter h : )
+          read(h)
+          write(Enter y1 :)
+          read(y1)
+
+[Step-3]  [Set initial Value To Array]
+          x_array(i) <- x0
+          y_array(i) <- y1
+
+[Step-4]  [Find x0 to xn Values and Count It]
+          for(i<-1 to x_array(i)<=xn){
+              x_array(i+1) <- x_array(i)+h;
+              count++;
+          }
+
+[Step-5]  [Find y_array Value To apply Euler's Formula]
+          for(i<-1 to i<=count){
+              /* Eulers Formula */
+              y_array(i+1) <- y_array(i)+h*fxy[x_array(i),y_array(i)];
+
+              /* Eulers Modified Formula */
+              y_array(i+1) <- y_array(i)+(h/2)*fxy[x_array(i),y_array(i)]+fxy[x_array(i+1),y_array(i+1)];
+          }
+
+[Step-6]  [Display]
+          for(i<-1 to i<=count){
+              write(x_array(i) y_array(i))
+          }
+
+[Step-7]  [Exit]
+          End.
