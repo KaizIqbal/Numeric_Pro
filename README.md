@@ -1,7 +1,7 @@
 # Numeric_Pro
 Numerical Programs In C
 
-> **Note**: _ The code of all method is Develop in "C" is compiled with GNU GCC compiler. However, these codes are compatible with all other operating systems. _
+> **Note**:  The code of all method is Develop in "C" is compiled with GNU GCC compiler. However, these codes are compatible with all other operating systems. 
 
 # CLONING WITH GIT
 ```
